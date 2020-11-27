@@ -1,0 +1,43 @@
+.header {
+  background-color: #0c0c0d;
+  height: 60px;
+  border-bottom: 1px solid #252426;
+}
+
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar {
+  padding: 0px;
+  padding-right: 10px;
+}
+
+.nav-item {
+  cursor: pointer;
+}
+
+.navbar-text {
+  cursor: pointer;
+}
+
+.logo {
+  width: auto;
+  height: 60px;
+}
+
+.appButton {
+  color: white;
+  background-color: #248bf2;
+  border-radius: 10px;
+  border: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #c4c4c4;
+  font-weight: bold !important;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}

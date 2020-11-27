@@ -1,0 +1,71 @@
+.topDiv {
+    position: relative;
+    padding: 50px 0 50px 15%;
+    height: 400px;
+    background: linear-gradient(145.34deg, #0C0C0D 25.75%, #19181A 79.56%);
+}
+
+.landing_title {
+    font-size: 50px;
+    line-height: 55px;
+}
+
+.curveDiv {
+    position: absolute;
+    text-align: right;
+    bottom: -40px;
+    right: 0px;
+}
+
+.curveDiv img {
+    width: 80%;
+}
+
+.middleDiv {
+    position: relative;
+    text-align: center;
+    padding: 50px 15%;
+    background-color: #0c0c0d;
+}
+
+.featureCard {
+    margin: 0 auto;
+    position: normal;
+    padding: 20px 0px;
+    max-width: 300px;
+    height: 280px;
+    background-color: #19181a;
+}
+
+.featureCard:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 5px 1px #555;
+}
+
+.cardHeader {
+    border-bottom: 1px solid #252426;
+    min-height: 90px;
+}
+
+.cardContent {
+    padding: 20px 20px;
+}
+
+.cardContent ul {
+    list-style: none;
+    padding-inline-start: 15px;
+}
+
+.cardContent ul li::before {
+    content: "\2022";
+    color: #248BF2;
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+}
+
+.cardContent li {
+    font-size: 12px;
+    margin-top: 10px;
+}

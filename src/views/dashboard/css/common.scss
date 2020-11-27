@@ -1,0 +1,359 @@
+$main-color: #248bf2;
+$outline-color: rgba(78, 23, 229, 0.3);
+$card-bg-color: rgba(25, 24, 25, 1);
+$compv-font-size: 14px;
+$compv-font-size-small: 10px;
+$message-bg-color: #262526;
+$text-color-gray: #ccc;
+$compv-color-green: #20d96a;
+
+.main-color {
+  color: $main-color;
+}
+
+.main-panel {
+  min-height: calc(100vh - 60px);
+}
+
+.card {
+  background-color: rgba(25, 24, 25, 1);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+// .side-panel {
+//   min-width: 450px;
+//   max-width: 700px;
+//   width: 593px;
+// }
+
+// .center-panel {
+//   max-width: 800px;
+//   min-width: 680px;
+// }
+
+@media only screen and (max-width: 768px) {
+  .side-panel {
+    padding-left: 15px !important;
+  }
+
+  .center-panel {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+}
+
+/* Use this style instead of .card */
+.comp-card {
+  background-color: rgba(25, 24, 25, 1);
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+.card-grey {
+  background-color: rgba(38, 37, 38, 1);
+  border-radius: 10px;
+}
+
+.title {
+  color: #cccccc;
+  font-size: large;
+  margin-top: 20px;
+}
+
+.mark-icon {
+  min-width: 48px;
+  width: 48px;
+  height: 48px;
+}
+
+/* Tab */
+.MuiTab-root {
+  text-transform: none !important;
+}
+
+.PrivateTabIndicator-colorPrimary-2 {
+  background-color: $main-color !important;
+}
+
+/* Button */
+.btn-group-left {
+  border-top-left-radius: 8px !important;
+  border-bottom-left-radius: 8px !important;
+  border-color: $main-color !important;
+  color: white !important;
+}
+
+.btn-group-right {
+  border-top-right-radius: 8px !important;
+  border-bottom-right-radius: 8px !important;
+  border-color: $main-color !important;
+  color: white !important;
+}
+
+.btn-group {
+  line-height: 1.5 !important;
+}
+
+.compv-btn {
+  background-color: $main-color !important;
+  color: white !important;
+}
+
+.compv-btn-outline {
+  color: white !important;
+  border: solid 1px !important;
+  border-color: $outline-color !important;
+  border-radius: 8px !important;
+  height: 40px;
+}
+
+.protocol-btn {
+  background-color: $main-color !important;
+  color: white !important;
+  border: solid 1px !important;
+  border-color: $main-color !important;
+  line-height: 15px !important;
+  border-radius: 8px !important;
+}
+
+.protocol-btn-outline {
+  color: white !important;
+  border: solid 1px !important;
+  border-color: $main-color !important;
+  border-radius: 8px !important;
+  line-height: 15px !important;
+}
+
+.MuiButton-root {
+  text-transform: none !important;
+  font-size: $compv-font-size !important;
+}
+
+button:hover {
+  background-color: #333 !important;
+}
+
+.icon-style:hover {
+  color: gray;
+  cursor: pointer;
+}
+
+/* -- */
+
+.MuiDivider-root {
+  background-color: #252326 !important;
+}
+
+.compv-font-size {
+  font-size: $compv-font-size;
+}
+
+.compv-font-size-small {
+  font-size: $compv-font-size-small;
+}
+
+.voting-col-min-width {
+  min-width: 150px;
+}
+
+.voting-list-no-col {
+  width: 35px;
+}
+
+.list-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 32px;
+  background-color: $compv-color-green;
+}
+
+.avatar-name-text {
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.chip-icon-yellow {
+  background-color: #ffcd4e !important;
+}
+
+.chip-icon-gray {
+  background-color: #c4c4c4 !important;
+}
+
+.MuiChip-root {
+  border-radius: 4px !important;
+  background-color: $message-bg-color !important;
+  color: $text-color-gray !important;
+  font-size: $compv-font-size-small !important;
+  height: 20px !important;
+  margin-left: 10px !important;
+  font-family: inherit !important;
+}
+
+.MuiChip-root .MuiChip-avatar {
+  width: 8px !important;
+  height: 8px !important;
+}
+
+.dot-green {
+  width: 4px;
+  height: 4px;
+  border-radius: 8px;
+  background: #20d96a;
+}
+
+/** Message Style **/
+.rcw-conversation-container {
+  border-radius: 0px;
+  box-shadow: none;
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.rcw-launcher {
+  display: none;
+}
+
+.rcw-widget-container {
+  bottom: 0;
+  display: flex;
+  max-width: inherit;
+  width: auto;
+  height: 100%;
+  margin: 0;
+  flex-direction: column;
+  position: inherit;
+}
+
+.rcw-messages-container {
+  background-color: $card-bg-color;
+  max-height: calc(100vh - 260px);
+  height: auto;
+  min-height: 500px;
+}
+
+.rcw-response .rcw-message-text {
+  background-color: $message-bg-color;
+}
+
+.rcw-client .rcw-message-text {
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid 1px #262526;
+  color: #ccc;
+}
+
+.rcw-avatar {
+  width: 78px;
+  height: 72px;
+  border-radius: 0;
+}
+
+.rcw-sender {
+  background-color: $card-bg-color;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 0;
+}
+
+.rcw-new-message {
+  background-color: $message-bg-color;
+  height: 48px;
+  border-radius: 8px;
+  color: $text-color-gray;
+  margin-right: 10px;
+}
+
+.rcw-send .rcw-send-icon {
+  display: none;
+}
+
+.rcw-send {
+  height: 48px;
+  width: 52px;
+  background: url("/assets/icons/msg-send.png") no-repeat;
+  background-size: contain;
+}
+
+.rcw-send:hover {
+  scale: 0.9;
+  background-color: transparent !important;
+}
+
+.rcw-conversation-container .rcw-header {
+  border-radius: 0;
+  background: url("/assets/images/msg-banner.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: left;
+}
+
+.rcw-conversation-container .rcw-header:hover {
+  border-radius: 0;
+  background: url("/assets/images/msg-banner-hover.png") no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.rcw-conversation-container.active {
+  background-color: $card-bg-color;
+}
+
+.rcw-conversation-container .rcw-header h4 {
+  margin-top: 27px;
+  color: black;
+  font-size: 1.5em;
+  font-weight: bold;
+  font-family: "Work Sans";
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 800px) {
+  .rcw-conversation-container .rcw-header h4 {
+    margin-top: 27px;
+    color: black;
+    font-size: 0.9em;
+    font-weight: bold;
+    font-family: "Work Sans";
+    padding-bottom: 0;
+  }
+}
+
+.rcw-conversation-container .rcw-header span {
+  color: black;
+  font-size: 0.9em;
+}
+
+@media screen and (max-width: 800px) {
+  .rcw-conversation-container .rcw-header span {
+    color: black;
+    font-size: 0.7em;
+  }
+}
+
+.chat-title {
+  margin-left: -20px;
+}
+
+.rcw-conversation-container .rcw-close-button {
+  display: none;
+}
+
+.votingList {
+  max-height: calc(100vh - 580px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.proposalList {
+  max-height: calc(100vh - 530px);
+  overflow-x: hidden;
+  overflow-y: auto;
+}
